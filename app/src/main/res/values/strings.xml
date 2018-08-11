@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ActivityTest</string>
-    <string name="button1">Button</string>
+    <string name="button1">Button1</string>
+    <string name="button2">Button2</string>
+    <string name="button4">Button4:点击去到SecondActivity</string>
+    <string name="button5">Button5隐式intent</string>
 </resources>

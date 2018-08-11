@@ -9,10 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FirstActivity" android:label="自由职客">
+        <activity
+            android:name=".FirstActivity"
+            android:label="自由职客">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity">
+            <intent-filter>
+                <action android:name="com.coding25.activitytest.ACTION_START" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>
