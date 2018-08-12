@@ -16,38 +16,38 @@ public class FirstActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_layout);
 //        button1 Toast
-        Button button1=(Button) findViewById(R.id.button1);
+        Button button1 = (Button) findViewById(R.id.button1);
 //        button2 finish
-        Button button2=(Button) findViewById(R.id.button2);
+        Button button2 = (Button) findViewById(R.id.button2);
 //        button4 firstToSecond
-        Button button4=(Button) findViewById(R.id.button4);
-        Button button5=(Button) findViewById(R.id.button5);
-        button1.setOnClickListener(new View.OnClickListener(){
+        Button button4 = (Button) findViewById(R.id.button4);
+        Button button5 = (Button) findViewById(R.id.button5);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Toast.makeText(FirstActivity.this,"You clicked button1",
+            public void onClick(View v) {
+                Toast.makeText(FirstActivity.this, "You clicked button1",
                         Toast.LENGTH_LONG).show();
 
             }
         });
-        button2.setOnClickListener(new View.OnClickListener(){
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 finish();
 
             }
         });
-        button4.setOnClickListener(new View.OnClickListener(){
+        button4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
                 startActivity(intent);
 
             }
         });
-        button5.setOnClickListener(new View.OnClickListener(){
+        button5.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 Intent intent = new Intent("com.coding25.activitytest.ACTION_START");
                 startActivity(intent);
 
@@ -57,12 +57,12 @@ public class FirstActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.add_item:
-                Toast.makeText(this,"you clicked add",Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "you clicked add", Toast.LENGTH_LONG).show();
                 break;
             case R.id.remove_item:
-                Toast.makeText(this,"you clicked remove",Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "you clicked remove", Toast.LENGTH_LONG).show();
                 break;
             default:
         }
@@ -71,7 +71,7 @@ public class FirstActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main,menu);
+        getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 }
