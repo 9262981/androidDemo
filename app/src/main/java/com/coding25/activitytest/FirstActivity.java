@@ -22,12 +22,12 @@ public class FirstActivity extends AppCompatActivity {
 //        button4 firstToSecond
         Button button4 = (Button) findViewById(R.id.button4);
         Button button5 = (Button) findViewById(R.id.button5);
+        Button button6 = (Button) findViewById(R.id.button6);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(FirstActivity.this, "You clicked button1",
                         Toast.LENGTH_LONG).show();
-
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +45,7 @@ public class FirstActivity extends AppCompatActivity {
 
             }
         });
+//        隐式intent
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +54,18 @@ public class FirstActivity extends AppCompatActivity {
 
             }
         });
+        //自定义category
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("com.coding25.activitytest.ACTION_START");
+                intent.addCategory("com.coding25.activitytest.My_CATEGORY");
+                startActivity(intent);
+
+            }
+        });
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

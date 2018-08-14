@@ -14,14 +14,21 @@
             android:label="自由职客">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- 隐式intent -->
         <activity android:name=".SecondActivity">
             <intent-filter>
                 <action android:name="com.coding25.activitytest.ACTION_START" />
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ThirdActivity">
+            <intent-filter>
+                <action android:name="com.coding25.activitytest.ACTION_START" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.coding25.activitytest.My_CATEGORY" />
             </intent-filter>
         </activity>
     </application>

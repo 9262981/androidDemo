@@ -4,4 +4,5 @@
     <string name="button2">Button2</string>
     <string name="button4">Button4:点击去到SecondActivity</string>
     <string name="button5">Button5隐式intent</string>
+    <string name="button6">Button6自定义category</string>
 </resources>
