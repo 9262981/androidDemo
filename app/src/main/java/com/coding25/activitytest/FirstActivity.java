@@ -1,6 +1,7 @@
 package com.coding25.activitytest;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -23,6 +24,8 @@ public class FirstActivity extends AppCompatActivity {
         Button button4 = (Button) findViewById(R.id.button4);
         Button button5 = (Button) findViewById(R.id.button5);
         Button button6 = (Button) findViewById(R.id.button6);
+        Button button7 = (Button) findViewById(R.id.button7);
+        Button button8 = (Button) findViewById(R.id.button8);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,12 +57,32 @@ public class FirstActivity extends AppCompatActivity {
 
             }
         });
-        //自定义category
+//        自定义category
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent("com.coding25.activitytest.ACTION_START");
                 intent.addCategory("com.coding25.activitytest.My_CATEGORY");
+                startActivity(intent);
+
+            }
+        });
+//        更多隐式intent--进入浏览器页面
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("http://www.freekeer.com"));
+                startActivity(intent);
+
+            }
+        });
+//        更多隐式intent--进入拨号页面
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:10010"));
                 startActivity(intent);
 
             }
