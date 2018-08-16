@@ -7,7 +7,7 @@
 
     <Button
         android:id="@+id/button1"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -16,9 +16,10 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/button1" />
+
     <Button
         android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        style="@android:style/Widget.Button.Small"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -27,9 +28,10 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/button2" />
+
     <Button
         android:id="@+id/button4"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -38,9 +40,10 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/button4" />
+
     <Button
         android:id="@+id/button5"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -49,9 +52,10 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/button5" />
+
     <Button
         android:id="@+id/button6"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -60,9 +64,10 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/button6" />
+
     <Button
         android:id="@+id/button7"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        style="@android:style/Widget.Material.Light.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -71,9 +76,10 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:text="button7-进入浏览器Uri" />
+
     <Button
         android:id="@+id/button8"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -81,5 +87,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        android:text="button8-进入拨号" />
+        android:text="button8-进入拨号"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold|italic" />
 </LinearLayout>
