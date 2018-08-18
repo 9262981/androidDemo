@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">ActivityTest</string>
-    <string name="button1">Button1-Toast</string>
-    <string name="button2">Button2-finish()</string>
-    <string name="button4">Button4-显式intent->SecondActivity</string>
-    <string name="button5">Button5-隐式intent</string>
-    <string name="button6">Button6-自定义category</string>
+    <string name="button1">B1-Toast</string>
+    <string name="button2">B2-finish()</string>
+    <string name="button4">B4-显式intent->SecondActivity(+传递数据)</string>
+    <string name="button5">B5-隐式intent</string>
+    <string name="button6">B6-自定义category</string>
 </resources>

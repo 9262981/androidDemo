@@ -75,7 +75,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        android:text="button7-进入浏览器Uri" />
+        android:text="B7-进入浏览器Uri" />
 
     <Button
         android:id="@+id/button8"
@@ -87,7 +87,20 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        android:text="button8-进入拨号"
+        android:text="B8-进入拨号"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold|italic" />
+    <Button
+        android:id="@+id/button9"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="B9-返回数据给上个活动"
         android:textColor="@android:color/holo_green_light"
         android:textStyle="bold|italic" />
 </LinearLayout>
